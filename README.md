@@ -24,11 +24,11 @@ Se possuir o diretório siga para [Pegar Chave](#pegar-a-chave). Caso contrário
 
 Com o diretório criado. Use o comando:
 ```bash
-$> cat ~/.ssh/id_rsa.pub >> Chave.txt
+cat ~/.ssh/id_rsa.pub >> Chave.txt
 ```
 **ou**
 ```bash
-$> cat ~/.ssh/id_ed25519.pub >> Chave.txt
+cat ~/.ssh/id_ed25519.pub >> Chave.txt
 ```
 Tudo o que estiver dentro do arquivo é sua chave ssh.
 Já pode seguir para o passo [Incluir Chave no GitHub](#incluir-chave-no-github)
@@ -51,14 +51,14 @@ Já pode seguir para o passo [Incluir Chave no GitHub](#incluir-chave-no-github)
 Na home de seu sistema execute:
 
 ```bash
-$> ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
 ```
 Aperte *Enter* 3 vezes.
 </br>
 Não ha a necessidade de incluir o file ou a frase.
 ```bash
-$> eval $(ssh-agent -s)
-$> ssh-add ~/.ssh/id_rsa
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/id_rsa
 ```
 Com esses comandos você criou o diretório .ssh/ e gerou sua chave. Pode siguir para [Pegar Chave](#pegar-a-chave).
 
